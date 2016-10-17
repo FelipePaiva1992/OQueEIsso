@@ -1,0 +1,58 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.NoActionBar" >
+        <item name="android:colorPrimaryDark">@android:color/black</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/black</item>
+
+    </style>
+
+    <style name="AppThemeFullScreen" parent="android:Theme.Material.Light.NoActionBar.Fullscreen" >
+
+    </style>
+
+    <style name="AppThemeDialogFullScreen" parent="android:Theme.DeviceDefault.Light.Dialog.NoActionBar">
+        <item name="android:windowBackground">@drawable/border_round</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimationBubbleTop</item>
+        <item name="android:windowMinWidthMajor">60%</item>
+        <item name="android:windowMinWidthMinor">60%</item>
+    </style>
+
+    <style name="AppThemeDialogFullScreen80" parent="android:Theme.DeviceDefault.Light.Dialog.NoActionBar">
+        <item name="android:windowBackground">@drawable/border_round</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimationBubbleBottom</item>
+        <item name="android:windowMinWidthMajor">80%</item>
+        <item name="android:windowMinWidthMinor">80%</item>
+    </style>
+
+
+    <style name="WaitDialogFull" parent="android:Theme.DeviceDefault.Light.Dialog.NoActionBar">
+        <item name="android:windowBackground">@drawable/borda_caixa_dialog</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimationBubbleBottom</item>
+        <item name="android:windowMinWidthMajor">40%</item>
+        <item name="android:windowMinWidthMinor">40%</item>
+    </style>
+
+    <!--style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/abc_fade_in</item>
+        <item name="android:windowExitAnimation">@anim/abc_fade_out</item>
+    </style -->
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+    <style name="DialogAnimationBubbleTop">
+        <item name="android:windowEnterAnimation">@anim/window_scale_top</item>
+        <item name="android:windowExitAnimation">@anim/window_scale_back_top</item>
+    </style>
+
+    <style name="DialogAnimationBubbleBottom">
+        <item name="android:windowEnterAnimation">@anim/window_scale_bottom</item>
+        <item name="android:windowExitAnimation">@anim/window_scale_back_bottom</item>
+    </style>
+
+
+</resources>

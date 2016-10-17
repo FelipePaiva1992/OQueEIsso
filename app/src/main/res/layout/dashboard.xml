@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <include layout="@layout/header_layout"
+        android:id="@+id/header"
+        />
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/header"
+        >
+
+        <GridView android:id="@+id/lv_duvidas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/header"
+            android:divider="@color/switch_thumb_normal_material_light"
+            android:dividerHeight="0dp"
+            android:longClickable="true"
+            android:scrollbars="none">
+
+        </GridView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@drawable/shadow_bottom"
+        android:layout_below="@+id/header"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view" />
+
+
+
+</RelativeLayout>

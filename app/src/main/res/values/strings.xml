@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">O que é isso?</string>
+    <string name="action_settings">Configurações</string>
+    <string name="url_sobre">http://www.mobileinteligence.com/oqueeisso/#three</string>
+
+    <string-array name="array_states">
+        <item>Estado</item>
+        <item>AC</item>
+        <item>AL</item>
+        <item>AP</item>
+        <item>AM</item>
+        <item>BA</item>
+        <item>CE</item>
+        <item>DF</item>
+        <item>ES</item>
+        <item>GO</item>
+        <item>MA</item>
+        <item>MT</item>
+        <item>MS</item>
+        <item>MG</item>
+        <item>PA</item>
+        <item>PB</item>
+        <item>PE</item>
+        <item>PI</item>
+        <item>PR</item>
+        <item>RJ</item>
+        <item>RN</item>
+        <item>RS</item>
+        <item>RO</item>
+        <item>RR</item>
+        <item>SC</item>
+        <item>SE</item>
+        <item>SP</item>
+        <item>TO</item>
+    </string-array>
+
+    <string-array name="categorias">
+        <item>Automovel</item>
+        <item>Animal</item>
+        <item>Sexo</item>
+        <item>Outros</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="45dp"
+        android:background="@android:color/white" >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/menu"
+        android:paddingTop="@dimen/dim_10"
+        android:paddingLeft="@dimen/dim_10"
+        android:paddingBottom="@dimen/dim_10"
+        android:paddingRight="@dimen/dim_10"
+        android:background="@android:color/darker_gray"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/dim_40"
+            android:layout_height="@dimen/dim_40"
+            android:id="@+id/imageView"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/img_circle" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Amendo Bobo"
+            android:id="@+id/txt_perfil"
+            android:paddingLeft="@dimen/dim_10"
+            android:paddingRight="@dimen/dim_10"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/white"
+            android:clickable="true"
+            android:background="@drawable/long_click_effect_gray"
+            android:layout_alignTop="@+id/imageView"
+            android:gravity="center_vertical"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/imageView" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+            android:id="@+id/ln_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/menu"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/txt_menu_duvida"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_60"
+                android:text="Dúvidas"
+                android:clickable="true"
+                android:textSize="@dimen/tex_size_xlarge"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"
+                android:background="@drawable/long_click_effect_white"
+                android:paddingLeft="@dimen/dim_10"
+                android:drawableLeft="@android:drawable/ic_menu_help"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_1"
+                android:background="@color/button_material_light"
+                android:layout_marginLeft="@dimen/dim_20"
+                android:layout_marginRight="@dimen/dim_20" />
+
+            <TextView
+                android:id="@+id/txt_nova_duvida"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_60"
+                android:text="Nova Dúvida"
+                android:clickable="true"
+                android:textSize="@dimen/tex_size_xlarge"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"
+                android:background="@drawable/long_click_effect_white"
+                android:paddingLeft="@dimen/dim_10"
+                android:drawableLeft="@android:drawable/ic_menu_edit"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_1"
+                android:background="@color/button_material_light"
+                android:layout_marginLeft="@dimen/dim_20"
+                android:layout_marginRight="@dimen/dim_20" />
+
+            <TextView
+                android:id="@+id/txt_respostas"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_60"
+                android:text="Minhas Respostas"
+                android:clickable="true"
+                android:textSize="@dimen/tex_size_xlarge"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"
+                android:background="@drawable/long_click_effect_white"
+                android:paddingLeft="@dimen/dim_10"
+                android:drawableLeft="@android:drawable/ic_menu_myplaces"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_1"
+                android:background="@color/button_material_light"
+                android:layout_marginLeft="@dimen/dim_20"
+                android:layout_marginRight="@dimen/dim_20" />
+
+
+            <TextView
+                android:id="@+id/txt_config"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_60"
+                android:text="Configurações"
+                android:clickable="true"
+                android:textSize="@dimen/tex_size_xlarge"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"
+                android:background="@drawable/long_click_effect_white"
+                android:paddingLeft="@dimen/dim_10"
+                android:drawableLeft="@android:drawable/ic_menu_manage"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_60"
+                android:text="Saiba Mais"
+                android:clickable="true"
+                android:textSize="@dimen/tex_size_xlarge"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@android:color/white"
+                android:background="@android:color/darker_gray"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dim_10"
+                />
+
+            <TextView
+                android:id="@+id/txt_sobre"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_60"
+                android:text="Sobre"
+                android:clickable="true"
+                android:textSize="@dimen/tex_size_xxlarge"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="@android:color/black"
+                android:gravity="center_vertical"
+                android:background="@drawable/long_click_effect_white"
+                android:paddingLeft="@dimen/dim_10"
+                android:drawableLeft="@android:drawable/ic_menu_help"
+                 />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dim_1"
+                android:background="@color/button_material_light"
+                android:layout_marginLeft="@dimen/dim_20"
+                android:layout_marginRight="@dimen/dim_20" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--ImageButton
+        android:id="@+id/btn_agenda"
+        android:layout_width="@dimen/dim_50"
+        android:layout_height="@dimen/dim_50"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_oval"
+        android:src="@drawable/ic_add_white_18dp"
+        android:layout_marginBottom="@dimen/dim_20"/-->
+
+</RelativeLayout>

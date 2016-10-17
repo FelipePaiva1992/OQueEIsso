@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/border_round_white"
+        android:layout_alignParentBottom="true" >
+
+
+        <ListView android:id="@+id/lv_categoria"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_above="@+id/btn_cancelar">
+
+        </ListView>
+
+        <TextView
+            android:id="@+id/btn_cancelar"
+            android:layout_width="@dimen/dim_150"
+            android:layout_height="@dimen/dim_40"
+            android:text="Cancelar"
+            android:clickable="true"
+            android:textColor="@color/accent_material_light"
+            android:textSize="@dimen/tex_size_xlarge"
+            android:background="@drawable/long_click_effect_white"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

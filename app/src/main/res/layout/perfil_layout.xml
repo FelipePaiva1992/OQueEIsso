@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/border_round_white" >
+
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/imageButton"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="@dimen/dim_5"
+            android:background="@drawable/img_circle_white"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dim_5"
+            android:layout_marginRight="@dimen/dim_5"
+            android:hint="Nome ou Apelido"
+            android:layout_alignEnd="@+id/btn_ok"
+            android:layout_toEndOf="@+id/imageButton" />
+
+
+        <TextView
+            android:id="@+id/btn_cancelar"
+            android:layout_width="@dimen/dim_120"
+            android:layout_height="@dimen/dim_40"
+            android:text="Cancelar"
+            android:clickable="true"
+            android:textColor="@color/accent_material_light"
+            android:textSize="@dimen/tex_size_xlarge"
+            android:background="@drawable/long_click_effect_white"
+            android:gravity="center"
+            android:layout_alignTop="@+id/btn_ok"
+            android:layout_toStartOf="@+id/btn_ok" />
+
+        <TextView
+            android:id="@+id/btn_ok"
+            android:layout_width="@dimen/dim_80"
+            android:layout_height="@dimen/dim_40"
+            android:text="Ok"
+            android:clickable="true"
+            android:textColor="@color/accent_material_light"
+            android:textSize="@dimen/tex_size_xlarge"
+            android:background="@drawable/long_click_effect_white"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
